@@ -13,9 +13,9 @@ class User(Model):
     date_auth = DateTimeField(null=True) # ПОЛЕ можно быть пустым
     bloked = BooleanField(default=False)
     role = CharField(max_length=20,choices=[
-            ('admin', 'Admin'),
-            ('user', 'User'),
-            ('manager', 'Manager'),
+            ('admin', 'Администратор'),
+            ('user', 'Пользователь'),
+
         ], default='user')
     class Meta:
         database = db
