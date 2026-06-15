@@ -44,9 +44,21 @@
                     <h1 class="modulename">
 Demo    </h1>
 
-                
-                
-                
+                <div class="docstring">
+                    <p>Пакет Demo — приложение для работы с базой данных, авторизацией и управлением пользователями.</p>
+                    <h3>Генерация документации</h3>
+                    <p>Документация создаётся с помощью <a href="https://pdoc.dev" target="_blank">pdoc</a>.</p>
+                    <p>Установка зависимостей:</p>
+                    <pre><code>pip install -r requirements.txt</code></pre>
+                    <p>Генерация HTML-документации:</p>
+                    <pre><code>python -m pdoc Demo --output-dir docs</code></pre>
+                    <p>Результат:</p>
+                    <ul>
+                        <li><code>docs/index.html</code> — точка входа (перенаправляет на <code>Demo.html</code>)</li>
+                        <li><code>docs/Demo.html</code> — главная страница документации пакета <code>Demo</code></li>
+                        <li><code>docs/Demo/</code> — детальная документация по подмодулям: <code>Connection</code>, <code>Controllers</code>, <code>Models</code>, <code>Views</code></li>
+                    </ul>
+                </div>
                 
             </section>
     </main>
